@@ -16,7 +16,7 @@ export function simpleSort(arr: number[], order = "asc"): number[] {
                                     //원본 변경하기 싫으면 1. 복사해서 쓰거나 2. 손을 못 대게 하든가(Read-Only)
     for (let i = 0; i < sortedArr.length - 1; i++) {
         for (let j = 0; j < sortedArr.length - 1; j++) {
-            if (decideOrder(sortedArr[j] as number, sortedArr[j + 1] as number, order)) {
+            if (decideOrder(sortedArr[j] as number, sortedArr[j + 1] as number, order)) {   // Q: as number를 4번이나 써야 할까?
                 const temp = sortedArr[j] as number;
                 sortedArr[j] = sortedArr[j + 1] as number;
                 sortedArr[j + 1] = temp;
