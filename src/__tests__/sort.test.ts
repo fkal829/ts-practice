@@ -1,4 +1,4 @@
-import { simpleSort } from '@/sort';
+import { simpleSort } from '@/sort';    // Q: sum.test.ts와 마찬가지
 import '@jest/globals';
 
 describe('숫자 정렬 함수', () => {

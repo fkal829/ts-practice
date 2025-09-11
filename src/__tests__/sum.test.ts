@@ -1,4 +1,4 @@
-import { sum } from '@/sum';
+import { sum } from '@/sum';  // Q: 실행은 잘 되는데 왜 '@/sum'에 빨간 줄이 생길까?
 import '@jest/globals';
 
 describe('sum 함수 추가', () => {
