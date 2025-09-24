@@ -55,7 +55,7 @@ export class LinkedList<T> {
         return this.length;
     }
 
-    search(value: T): T | null {
+    search(value: T): T | null {    // T | null : 값이 없으면 null 반환
         let current = this.head;
         while (current) {
             if (current.value === value) {
